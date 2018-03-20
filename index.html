@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+   <head>
+      <title>Urban Airship - Bradley Imai</title>
+      <link type="text/css" rel="stylesheet" href="./css/Semantic-UI-CSS-master/semantic.css"/>
+      <link type="text/css" rel="stylesheet" href="./css/stylesheet.css"/>
+      <script type="text/javascript" src="./css/Semantic-UI-CSS-master/semantic.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+   </head>
+   <body>
+      <div class="siteheader">
+         <br><br>
+         <left class="sitenametop">Urban Airship</left>
+         <br><br>
+         <left class="sitenamebottom">Bradley Imai</left>
+         <br><br>
+      </div>
+      <div class="mainbody">
+         <left class="sectionheader"><h1>Full Name</h1></left>
+         <table class="ui celled padded table">
+            <thead>
+               <tr>
+                  <th class="single line">Name</th>
+                  <th>Last Name</th>
+                  <th>Action</th>
+               </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                     <td><?php echo $prize['name']; ?></td>
+                     <td><?php echo $prize['level']; ?></td>
+                     <td>
+                        <a onclick="return confirm('Hello Its Bradley!")" class='ui red button'>Click to See Notification</a>
+                     </td>
+                  </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>
+
