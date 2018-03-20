@@ -83,7 +83,56 @@
 
       disableAnalytics: true
 
-      
+      // Set tags
+      UA.then(function(sdk) {
+
+        // List all tags
+        sdk.channel.tags.list // Returns {device: [tag1, tag2, ...], custom-group: [tag]}
+
+        // Check for a specific tag
+        sdk.channel.tags.has(tag, group) // Returns bool
+
+        // Add a tag
+        sdk.channel.tags.add(tag, group) // Returns true if successful
+
+        // Remove a tag
+        sdk.channel.tags.remove([tag1, tag2, ...], group) // Returns True if successful
+
+        // Set tags
+        sdk.channel.tags.set(tags, group) // Returns true if successful
+        // Resets all tags for the given tag group.
+
+        // `group` is optional in all tag functions and defaults to `device` if not specified
+
+      })
+
+      // Setting the named user
+      UA.then(function(sdk) {
+        // Return the current Named User
+        sdk.channel.namedUser.id  // Returns null or string
+
+        // Set the Named User to a String
+        sdk.channel.namedUser.set(name) // associates this channel with a named user
+
+        // Remove the currently associated Named User
+        sdk.channel.namedUser.remove() // Disassociates the channel from the named user
+        // Returns true if successful
+
+      })
+
+      // Channel Tag Group
+      UA.then(function(sdk) {
+        // Add a tag to a group
+        sdk.channel.tags.add('tag-name', 'group-name')
+
+        // Remove a tag from a group
+        sdk.channel.tags.remove('tag-name', 'group-name')
+
+        // Set tags on a group
+        sdk.channel.tags.set(['silver-member', 'gold-member'], 'group-name')
+        // Resets all tags for the given tag group.
+
+      })
 
       </script>
 
