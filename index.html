@@ -36,6 +36,55 @@
         $('#register').click(function(ev) { sdk.register() })
       })
 
+      // Register the current browser with Urban Airship.
+      UA.then(function(sdk) {
+      sdk.register() // Returns Channel object
+      })
+
+      // Filter out non-complaint broswers 
+      UA.then(function(sdk) {
+      sdk.isSupported // Returns bool
+      })
+
+      // Validate Browser Support and Security
+      UA.then(function(sdk) {
+      sdk.canRegister // Returns bool
+      })
+
+      //Chanel Object
+      UA.then(function(sdk) {
+      // Return the current Channel ID
+      sdk.channel.id // Returns String
+      // Return the opted-in status
+      sdk.channel.optedIn // Returns bool
+      // Opt this device out of Web Notify
+      sdk.channel.optOut() // Returns true if successful
+      // In order to opt back in you must call `sdk.register()` again.
+      })
+
+      // The main SDK object fires a tags event any time the tags change.
+      UA.then(function(sdk) {
+         sdk.addEventListener('tags', function(ev) {
+         ev.tags === sdk.channel.tags.list
+         })
+      })
+
+      // If you are on an HTTPS page that is in-scope of your push-worker.js
+      UA.then(function(sdk) {
+         sdk.addEventListener('push', function(ev) {
+         // ev.push is the push payload object
+         })
+      })
+
+      //Disable Analytics
+      UA.then(function(sdk) {
+         sdk.disableAnalytics = true
+      })
+
+      disableAnalytics: true
+
+      
+
       </script>
 
 
