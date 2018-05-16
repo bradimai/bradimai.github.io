@@ -1,161 +1,111 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Photography</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/png" href="img/camera-icon.png"/>
+</head>
+<body>
+	<section class="intro">
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#port">Portfolio</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</nav>
+		<div class="inner">
+			<div class="content">
+				<h1>B.I.Productions</h1>
+				<p>All photos taken by yours truly</p>
+			</div>
+		</div>
+	</section>
+	<a name="about">
+<div class="clearfix"></div>
+	<section class="left-col">
+		<h2>About Me</h2>
+		<p style="text-indent: 6%;">I am currently a senior at Oregon State University studying Computer Science and Business. In the past couple of years of have picked up photography as a hobby and have fell in love with it. I enjoy every part of the journey that includes meeting new people and adventuring to new places.</p>
+	</section>
+	<section class="sidebar">
+		<img src="img/me.jpg">
+	</section>
 
-<html>
-   <head>
-      <title>Urban Airship - Bradley Imai</title>
-      <link type="text/css" rel="stylesheet" href="./css/Semantic-UI-CSS-master/semantic.css"/>
-      <link type="text/css" rel="stylesheet" href="./css/stylesheet.css"/>
-      <script type="text/javascript" src="./css/Semantic-UI-CSS-master/semantic.js"></script>
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-      <script type="text/javascript" src="./push-worker.js"></script>
+<div class="clearfix"></div>
+	<a name="port">
+		<h2>My Portfolio</h2>
+				<section class="one-third-port">
+					<a href="img/11.jpg" target="_blank"><img src="img/11.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/7.jpg" target="_blank"><img src="img/7.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/31 (1).jpg" target="_blank"><img src="img/31 (1).jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/13.jpg" target="_blank"><img src="img/13.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/6.jpg" target="_blank"><img src="img/6.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/fam.jpg" target="_blank"><img src="img/fam.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/kyla10(final).jpg" target="_blank"><img src="img/kyla10(final).jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/4.jpg" target="_blank"><img src="img/4.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/5(1).jpg" target="_blank"><img src="img/5(1).jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/8.jpg" target="_blank"><img src="img/8.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/9.jpg" target="_blank"><img src="img/9.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/10.jpg" target="_blank"><img src="img/10.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/1.jpg" target="_blank"><img src="img/1.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/14.jpg" target="_blank"><img src="img/14.jpg"></a>
+				</section>
+				<section class="one-third-port">
+					<a href="img/15.jpg" target="_blank"><img src="img/15.jpg"></a>
+				</section>
 
-      <script type="text/javascript">
-      // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1521577158.46
-      !function(n,t,c,e,u){function r(n){try{f=n(u)}catch(n){return h=n,void i(p,n)}i(s,f)}function i(n,t){for(var c=0;c<n.length;c++)d(n[c],t);
-      }function o(n,t){return n&&(f?d(n,f):s.push(n)),t&&(h?d(t,h):p.push(t)),l}function a(n){return o(!1,n)}function d(t,c){
-      n.setTimeout(function(){t(c)},0)}var f,h,s=[],p=[],l={then:o,catch:a,_setup:r};n[e]=l;var v=t.createElement("script");
-      v.src=c,v.async=!0,v.id="_uasdk",v.rel=e,t.head.appendChild(v)}(window,document,'https://web-sdk.urbanairship.com/notify/v1/ua-sdk.min.js',
-        'UA', {
-          appKey: 'JkCeyi7VRsa7oE7I6vRcvg',
-          token: 'MTpKa0NleWk3VlJzYTdvRTdJNnZSY3ZnOnJtV2FvenE3d3NIckRreEV2VTV0ZlctNWpENnlRTmVYc1JJTHNrUUVPa2M',
-          vapidPublicKey: 'BFHbnRpckwP3bsmLqzu0q8v_o7AtV2ZkjE1Hp4z3D4b00EU5nJdzOjwpMIdSD-u9aD7-rx4HOb-oZaxq9dtURIk='
-        });
-      </script>
-
-      <script type="text/javascript">
-         
-      UA.then(function(sdk) {
-      console.log(sdk.channel.id)
-      }).catch(function(err) {
-      console.log(err)
-      })
-
-      // Multiple calls have no additional expense.
-      UA.then(function(sdk) {
-        $('#register').show()
-        $('#register').click(function(ev) { sdk.register() })
-      })
-
-      // Register the current browser with Urban Airship.
-      UA.then(function(sdk) {
-      sdk.register() // Returns Channel object
-      })
-
-      // Filter out non-complaint broswers 
-      UA.then(function(sdk) {
-      sdk.isSupported // Returns bool
-      })
-
-      // Validate Browser Support and Security
-      UA.then(function(sdk) {
-      sdk.canRegister // Returns bool
-      })
-
-      //Chanel Object
-      UA.then(function(sdk) {
-      // Return the current Channel ID
-      sdk.channel.id // Returns String
-      // Return the opted-in status
-      sdk.channel.optedIn // Returns bool
-      // Opt this device out of Web Notify
-      sdk.channel.optOut() // Returns true if successful
-      // In order to opt back in you must call `sdk.register()` again.
-      })
-
-      // The main SDK object fires a tags event any time the tags change.
-      UA.then(function(sdk) {
-         sdk.addEventListener('tags', function(ev) {
-         ev.tags === sdk.channel.tags.list
-         })
-      })
-
-      // If you are on an HTTPS page that is in-scope of your push-worker.js
-      UA.then(function(sdk) {
-         sdk.addEventListener('push', function(ev) {
-         // ev.push is the push payload object
-         })
-      })
-
-      //Disable Analytics
-      UA.then(function(sdk) {
-         sdk.disableAnalytics = true
-      })
-
-      disableAnalytics: true
-
-      // Set tags
-      UA.then(function(sdk) {
-
-        // List all tags
-        sdk.channel.tags.list // Returns {device: [tag1, tag2, ...], custom-group: [tag]}
-
-        // Check for a specific tag
-        sdk.channel.tags.has(tag, group) // Returns bool
-
-        // Add a tag
-        sdk.channel.tags.add(tag, group) // Returns true if successful
-
-        // Remove a tag
-        sdk.channel.tags.remove([tag1, tag2, ...], group) // Returns True if successful
-
-        // Set tags
-        sdk.channel.tags.set(tags, group) // Returns true if successful
-        // Resets all tags for the given tag group.
-
-        // `group` is optional in all tag functions and defaults to `device` if not specified
-
-      })
-
-      // Setting the named user
-      UA.then(function(sdk) {
-        // Return the current Named User
-        sdk.channel.namedUser.id  // Returns null or string
-
-        // Set the Named User to a String
-        sdk.channel.namedUser.set(name) // associates this channel with a named user
-
-        // Remove the currently associated Named User
-        sdk.channel.namedUser.remove() // Disassociates the channel from the named user
-        // Returns true if successful
-
-      })
-
-      // Channel Tag Group
-      UA.then(function(sdk) {
-        // Add a tag to a group
-        sdk.channel.tags.add('tag-name', 'group-name')
-
-        // Remove a tag from a group
-        sdk.channel.tags.remove('tag-name', 'group-name')
-
-        // Set tags on a group
-        sdk.channel.tags.set(['silver-member', 'gold-member'], 'group-name')
-        // Resets all tags for the given tag group.
-
-      })
-
-      </script>
-
-
-   </head>
-   <body>
-      <div class="siteheader">
-         <br><br>
-         <left class="sitenametop">Urban Airship</left>
-         <br><br>
-         <left class="sitenamebottom">Bradley Imai</left>
-         <br><br>
-      </div>
-      <div class="mainbody">
-         <button id="register">Sign up for notifications</button>
-            <script>
-               document.getElementById('register').addEventListener('click', function(){
-                 UA.then(function(sdk) {
-                  sdk.register()
-                 })
-               })
-            </script>
-      </div>
-   </body>
+<div class="clearfix"></div>
+	<a name="contact">
+		<section class="parallax">
+			<div class="parallax-inner">
+			</div>
+		</section>
+<div class="clearfix"></div>
+	<h2>Contact Me</h2>
+	<section class="contact">
+		<p><br class="break"> <a href="mailto:bradimai@gmail.com">bradimai@gmail.com</a> <br class="break"> 971-322-6418</p>
+		<p> <br class="break"> Portland/Corvallis <br class="break"> Oregon <br</p>
+	</section>
+<div class="clearfix"></div>
+	<footer>
+		<ul class="social">
+			<li><a href="https://www.facebook.com/bradley.imai.9" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.instagram.com/bradimaiphoto/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+	</footer>
+	<footer class="second">
+		<p>&copy; Bradley Imai Photography.</p>
+	</footer>
+</body>
 </html>
-
